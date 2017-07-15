@@ -3,6 +3,7 @@
   {# Setup site's base URL to match the "baseUrl" key within `package.json` #}
   {# Otherwise default to relative pathing #}
   {% set baseUrl = config.baseUrl or './' %}
+  {% set title = 'Junvic Valdez - Developer Portfolio' %}
 {% endblock %}
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Junvic Valdez - Developer Portfolio</title>
+    <title>{{title}}</title>
     <meta name="description" content="A new Yeogurt application"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{{baseUrl}}styles/main.css"/>
