@@ -3,18 +3,69 @@
 {% import "_modules/link/link.nunjucks" as link %}
 
 {% block content %}
-<div class="main-container">
-  <div class="yeogurt-info">
-    <h1>Welcome to Yeogurt!</h1>
-    <p>
-      Take a look at the {{link.content({
-        href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
-        text: 'documentation'
-      })}} and start mixing up something awesome.
-    </p>
-    <p>
-      <img src="images/yeogurt-swirl.png" width="75px" class="logo" />
-    </p>
-  </div>
+<div class="container main-container">
+    <header class="row hero">
+        <div class="twelve columns">
+            <p class="logo">
+            <img src="images/junvic.png" />
+            </p>
+            <h1>Hi, I'm Junvic!</h1>
+            <p>I'm a software developer who loves helping people solve their problems through code.</p>
+        </div>
+    </header>
+    <nav class="row">
+        <div class="four columns">
+            {{link.content({ href: '#about', text: 'About Me' })}}
+        </div>
+        <div class="four columns">
+            {{link.content({ href: '#projects', text: 'Projects' })}}
+        </div>
+        <div class="four columns">
+            {{link.content({ href: '#contact', text: 'Contact' })}}
+        </div>
+    </nav>
+    <section class="row" id="about">
+        <div class="twelve columns">
+            <h2>About Me</h2>
+            <p>My name is Junvic Valdez, and I'm a software developer based in Manila, Philippines.</p>
+            <p>My 3 years of professional experience involved working with several Microsoft and .NET technologies. I've been a part of projects that used stuff like .NET Core, Xamarin, ASP.NET, SignalR and even Compact Framework and Windows Mobile!</p>
+            <p>I am also a passionate learner; outside of work I've involved myself in side projects, such as front-end development (AngularJS, Node, Bootstrap) and game development (Love2D, PhaserJS, SFML)</p>
+        </div>
+    </section>
+    <section class="row" id="projects">
+        <div class="twelve columns">
+            <h2>Projects</h2>
+            <p>Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a list of (side) projects which I <em>can</em> share:</p>
+        </div>
+    </section>
+    <section class="row">
+        <div class="three columns">
+            <p><strong>PSX Memory Card Library</strong></p>
+        </div>
+        <div class="three columns">
+            <p><strong>InstilledBee's Studio</strong></p>
+        </div>
+        <div class="three columns">
+            <p><strong>Ad Infinitum</strong></p>
+        </div>
+        <div class="three columns">
+            <p><strong>Compo</strong></p>
+        </div>
+    </section>
+    <section class="row" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to contact me for work, I'd love to hear from you. Send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and let's talk.</p>
+        <p>If e-mail isn't an option, feel free to connect with me on social media:</p>
+        <ul>
+            <li>{{link.content({ href: 'https://linkedin.com/in/junvicvaldez', text: 'LinkedIn', target: '_blank' })}}</li>
+            <li>{{link.content({ href: 'https://github.com/instilledbee', text: 'Github', target: '_blank' })}}</li>
+            <li>{{link.content({ href: 'https://fb.com/instilledbee', text: 'Facebook', target: '_blank' })}}</li>
+            <li>{{link.content({ href: 'https://twitter.com/InstilledBee', text: 'Twitter', target: '_blank' })}}</li>
+        </ul>
+    </section>
+    <footer class="row footer">
+        <p>Copyright &copy;2014-2017 Junvic Valdez<br/>Made with {{link.content({ href: 'https://github.com/larsonjj/generator-yeogurt', text: 'Yeogurt', target: '_blank' })}}, {{link.content({ href: 'https://mozilla.github.io/nunjucks/', text: 'Nunjucks', target: '_blank' })}}, {{link.content({ href: 'http://getskeleton.com', text: 'Skeleton', target: '_blank' })}}, {{link.content({ href: 'https://code.visualstudio.com', text: 'Visual Studio Code', target: '_blank' })}}, and lots of caffeine.</p>
+        <p>{{link.content({ href: 'https://github.com/instilledbee/junvic-me', text: 'View source on Github', target: '_blank' })}}</p>
+    </footer>
 </div>
 {% endblock %}
