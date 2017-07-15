@@ -9,7 +9,8 @@ JavaScript
 - [Node](https://nodejs.org/)
 
 Styles
-- [Sass](http://sass-lang.com/), with the help of ([node-sass](https://github.com/sass/node-sass))
+- [Sass](http://sass-lang.com/), with the help of [node-sass](https://github.com/sass/node-sass)
+- [Skeleton-Sass](https://github.com/WhatsNewSaes/Skeleton-Sass), a Sass version of [Skeleton CSS](https://getskeleton.com)
 
 Markup
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
