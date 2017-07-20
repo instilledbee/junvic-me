@@ -1,0 +1,17 @@
+{% macro row(id, title, p1, p2, p3) %}
+
+<section class="row" id="{{id}}">
+    <div class="twelve columns">
+        <h2>{{title}}</h2>
+        {% if p1 %}
+        <p>{{p1}}</p>
+        {% endif %}
+        {% if p2 %}
+        <p>{{p2}}</p>
+        {% endif %}
+        {% if p3 %}
+        <p>{{p3}}</p>
+        {% endif %}
+    </div>
+</section>
+{% endmacro %}
