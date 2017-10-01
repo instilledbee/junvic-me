@@ -23,7 +23,7 @@
             {{link.content({ href: '#contact', text: 'Contact' })}}
         </div>
     </nav>
-    {{row.row("about", "About Me", "My name is Junvic Valdez, and I'm a software developer based in Manila, Philippines.", "My 3 years of professional experience involved working with several Microsoft and .NET technologies. I've been a part of projects that used stuff like .NET Core, Xamarin, ASP.NET, SignalR and even Compact Framework and Windows Mobile!", "I am also a passionate learner; outside of work I've involved myself in side projects, such as front-end development (AngularJS, Node, Bootstrap) and game development (Love2D, PhaserJS, SFML)")}}
+    {{row.row("about", "About Me", "My name is Junvic Valdez, and I'm a software developer based in Manila, Philippines.", "My 3 years of professional experience involved working with several Microsoft and .NET technologies. I've been a part of projects that used tech both old and new, from .NET Core, Xamarin, ASP.NET, SignalR and even Compact Framework and Windows Mobile!", "I am also a passionate learner; outside of work I've involved myself in continuous learning and application through personal side projects, such as front-end development (AngularJS, Node, Bootstrap) and game development (Love2D, PhaserJS, SFML)")}}
     {{row.row("projects", "Projects", "Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a list of (side) projects which I <em>can</em> share:")}}
     <section class="row">
         <div class="three columns">
@@ -41,8 +41,8 @@
     </section>
     <section class="row" id="contact">
         <h2>Contact Me</h2>
-        <p>If you would like to contact me for work, I'd love to hear from you. Send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and let's talk.</p>
-        <p>If e-mail isn't an option, feel free to connect with me on social media:</p>
+        <p>I am currently <strong>open</strong> to new work opportunities! Feel free to send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and discuss.<br>My resumé is available upon request.</p>
+        <p>If e-mail isn't an option, feel free to connect with me on social media and other websites:</p>
         <ul>
             <li>{{link.content({ href: 'https://linkedin.com/in/junvicvaldez', text: 'LinkedIn', target: '_blank' })}}</li>
             <li>{{link.content({ href: 'https://github.com/instilledbee', text: 'Github', target: '_blank' })}}</li>
