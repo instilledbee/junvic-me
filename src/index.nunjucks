@@ -13,45 +13,53 @@
         </div>
     </header>
     <nav class="row">
-        <div class="four columns">
+        <div class="three columns">
             {{link.content({ href: '#about', text: 'About Me' })}}
         </div>
-        <div class="four columns">
+        <div class="three columns">
             {{link.content({ href: '#projects', text: 'Projects' })}}
         </div>
-        <div class="four columns">
+        <div class="three columns">
             {{link.content({ href: '#contact', text: 'Contact' })}}
+        </div>
+        <div class="three columns">
+            {{link.content({ href: 'https://junvic.me/blog', text: 'Blog', target: '_blank' })}}
         </div>
     </nav>
     {{row.row("about", "About Me", "My name is Junvic Valdez, and I'm a software developer based in Manila, Philippines.", "My 3 years of professional experience involved working with several Microsoft and .NET technologies. I've been a part of projects that used tech both old and new, from .NET Core, Xamarin, ASP.NET, SignalR and even Compact Framework and Windows Mobile!", "I am also a passionate learner; outside of work I've involved myself in continuous learning and application through personal side projects, such as front-end development (AngularJS, Node, Bootstrap) and game development (Love2D, PhaserJS, SFML)")}}
-    {{row.row("projects", "Projects", "Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a list of (side) projects which I <em>can</em> share:")}}
+    {{row.row("projects", "Projects", "Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a not-so-exhaustive list of side projects which I <em>can</em> share:")}}
     <section class="row">
-        <div class="three columns">
-            <p><strong>PSX Memory Card Library</strong></p>
+        <div class="four columns project">
+            <img src="images/psxmmclib.png" alt="PSXMMCLibrary">
         </div>
-        <div class="three columns">
-            <p><strong>InstilledBee's Studio</strong></p>
+        <div class="four columns project">
+            <img src="images/office-clicker.png" alt="Office Clicker">
         </div>
-        <div class="three columns">
-            <p><strong>Ad Infinitum</strong></p>
+        <div class="four columns project">
+            <img src="images/ad-infinitum.png" alt="Ad Infinitum">
         </div>
-        <div class="three columns">
-            <p><strong>Compo</strong></p>
+    </section>
+    <section class="row">
+        <div class="four columns project">
+            <img src="images/compo.png" alt="Compo">
+        </div>
+        <div class="four columns project">
+            <img src="images/instilledbee-net.png" alt="InstilledBee's Studio">
         </div>
     </section>
     <section class="row" id="contact">
         <h2>Contact Me</h2>
-        <p>I am currently <strong>open</strong> to new work opportunities! Feel free to send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and discuss.<br>My resumé is available upon request.</p>
+        <p>I am currently <strong>open</strong> to new work opportunities! Feel free to send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and discuss.<br/>My resumé is available upon request.</p>
         <p>If e-mail isn't an option, feel free to connect with me on social media and other websites:</p>
         <ul>
-            <li>{{link.content({ href: 'https://linkedin.com/in/junvicvaldez', text: 'LinkedIn', target: '_blank' })}}</li>
-            <li>{{link.content({ href: 'https://github.com/instilledbee', text: 'Github', target: '_blank' })}}</li>
-            <li>{{link.content({ href: 'https://fb.com/instilledbee', text: 'Facebook', target: '_blank' })}}</li>
-            <li>{{link.content({ href: 'https://twitter.com/InstilledBee', text: 'Twitter', target: '_blank' })}}</li>
+            <li>{{link.content({ href: 'https://linkedin.com/in/junvicvaldez', text: '<img src="images/linkedin.png" alt="LinkedIn">', target: '_blank', id: 'linkedin' })}}</li>
+            <li>{{link.content({ href: 'https://github.com/instilledbee', text: '<img src="images/github.png" alt="Github">', target: '_blank', id: 'github' })}}</li>
+            <li>{{link.content({ href: 'https://fb.com/instilledbee', text: '<img src="images/facebook.png" alt="Facebook">', target: '_blank', id: 'facebook' })}}</li>
+            <li>{{link.content({ href: 'https://twitter.com/InstilledBee', text: '<img src="images/twitter.png" alt="Twitter">', target: '_blank', id: 'twitter' })}}</li>
         </ul>
     </section>
     <footer class="row footer">
-        <p>Copyright &copy;2014-2017 Junvic Valdez<br/>Made with {{link.content({ href: 'https://github.com/larsonjj/generator-yeogurt', text: 'Yeogurt', target: '_blank' })}}, {{link.content({ href: 'https://mozilla.github.io/nunjucks/', text: 'Nunjucks', target: '_blank' })}}, {{link.content({ href: 'http://getskeleton.com', text: 'Skeleton', target: '_blank' })}}, and {{link.content({ href: 'https://code.visualstudio.com', text: 'Visual Studio Code', target: '_blank' })}}</p>
+        <p>Copyright &copy;2014-2017 Junvic Valdez<br/>Built with the help of {{link.content({ href: 'https://github.com/larsonjj/generator-yeogurt', text: 'Yeogurt', target: '_blank' })}}, {{link.content({ href: 'https://mozilla.github.io/nunjucks/', text: 'Nunjucks', target: '_blank' })}}, {{link.content({ href: 'http://getskeleton.com', text: 'Skeleton', target: '_blank' })}}, and {{link.content({ href: 'https://code.visualstudio.com', text: 'Visual Studio Code', target: '_blank' })}}</p>
         <p>{{link.content({ href: 'https://github.com/instilledbee/junvic-me', text: 'View source on Github', target: '_blank' })}}</p>
     </footer>
 </div>

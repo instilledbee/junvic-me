@@ -25,10 +25,27 @@ body {
     color: #252525;
 }
 
+h2 {
+    font-size: 3.15rem;
+}
+
+.round {
+    border-radius: 50%;
+}
+
 .hero {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.85rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .logo {
@@ -36,9 +53,100 @@ body {
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 512px;
+    border-radius: 50%;
     background-color: #FFFFFF;
-    box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    max-height: 208px;
+
+    @media screen and ($bp-larger-than-phablet) {
+        box-shadow: 6px 6px 28px rgba(0, 0, 0, 0.2);
+        max-height: 256px;
+    }
+
+    @media screen and ($bp-larger-than-desktop) {
+        box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.2);
+        max-height: 320px;
+    }
+}
+
+nav {
+    .columns {
+        text-align: center;
+        font-size: 1.75rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        a {
+            display: block;
+        }
+    }
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+        border-radius: 50%;
+        box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.2);
+        max-height: 224px;
+
+        @media screen and ($bp-larger-than-phablet) {
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 128px;
+        }
+
+        @media screen and ($bp-larger-than-desktop) {
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 192px;
+        }
+
+        @media screen and ($bp-larger-than-desktophd) {
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            max-height: 224px;
+        }
+    }
+}
+
+#contact
+{
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 2rem;
+
+        img {
+            display: block;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            background-position: center;
+            max-height: 48px;
+            text-align: center;
+
+            @media screen and ($bp-larger-than-phablet) {
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+                max-height: 64px;
+            }
+
+            @media screen and ($bp-larger-than-desktop) {
+                box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+                max-height: 96px;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+footer > p {
+    margin-bottom: 1.5rem;
 }
 
 // Styling on warning for users on IE7 or below
