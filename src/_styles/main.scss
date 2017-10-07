@@ -10,6 +10,10 @@
 // Import Modules
 @import '../_modules/link/link';
 
+$logo-size   : 320px;
+$project-size: 224px;
+$icon-size   : 96px;
+
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
 *,
@@ -56,16 +60,16 @@ h2 {
     border-radius: 50%;
     background-color: #FFFFFF;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
-    max-height: 208px;
+    max-height: $logo-size * 0.625;
 
     @media screen and ($bp-larger-than-phablet) {
         box-shadow: 6px 6px 28px rgba(0, 0, 0, 0.2);
-        max-height: 256px;
+        max-height: $logo-size * 0.8;
     }
 
     @media screen and ($bp-larger-than-desktop) {
         box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.2);
-        max-height: 320px;
+        max-height: $logo-size;
     }
 }
 
@@ -89,7 +93,7 @@ nav {
     img {
         border-radius: 50%;
         box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.2);
-        max-height: 224px;
+        max-height: 160px;
 
         @media screen and ($bp-larger-than-phablet) {
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -112,6 +116,11 @@ nav {
 {
     ul {
         list-style: none;
+        text-align: center;
+
+        @media screen and ($bp-larger-than-phablet) {
+            text-align: left;
+        }
     }
 
     li {

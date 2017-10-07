@@ -6,13 +6,5 @@
 {% set _href = spec.href or '#' %}
 {% set _target = spec.target or '_self' %}
 {% set _text = spec.text or 'Default Link' %}
-
-<a
-  id="{{_id}}"
-  class="link {{_class}}"
-  href="{{_href}}"
-  target="{{_target}}"
->
-{{_text}}
-</a>
+<a id="{{_id}}" class="link {{_class}}" href="{{_href}}" target="{{_target}}">{{_text}}</a>
 {% endmacro %}
