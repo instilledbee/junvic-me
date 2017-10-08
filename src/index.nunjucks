@@ -13,18 +13,20 @@
         </div>
     </header>
     <nav class="row">
-        <div class="three columns">
-            {{link.content({ href: '#about', text: 'About Me' })}}
-        </div>
-        <div class="three columns">
-            {{link.content({ href: '#projects', text: 'Projects' })}}
-        </div>
-        <div class="three columns">
-            {{link.content({ href: '#contact', text: 'Contact' })}}
-        </div>
-        <div class="three columns">
-            {{link.content({ href: 'https://junvic.me/blog', text: 'Blog', target: '_blank' })}}
-        </div>
+        <ul>
+            <li class="three columns">
+                {{link.content({ href: '#about', text: 'About Me' })}}
+            </li>
+            <li class="three columns">
+                {{link.content({ href: '#projects', text: 'Projects' })}}
+            </li>
+            <li class="three columns">
+                {{link.content({ href: '#contact', text: 'Contact' })}}
+            </li>
+            <li class="three columns">
+                {{link.content({ href: 'https://junvic.me/blog', text: 'Blog', target: '_blank' })}}
+            </li>
+        </ul>
     </nav>
     {{row.row("about", "About Me", "My name is Junvic Valdez, and I'm a software developer based in Manila, Philippines.", "My 3 years of professional experience involved working with several Microsoft and .NET technologies. I've been a part of projects that used tech both old and new, from .NET Core, Xamarin, ASP.NET, SignalR and even Compact Framework and Windows Mobile!", "I am also a passionate learner; outside of work I've involved myself in continuous learning and application through personal side projects, such as front-end development (AngularJS, Node, Bootstrap) and game development (Love2D, PhaserJS, SFML)")}}
     {{row.row("projects", "Projects", "Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a not-so-exhaustive list of side projects which I <em>can</em> share:")}}

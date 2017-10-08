@@ -1,13 +1,15 @@
 // link styles
+$link-color      :  #202C99;
+$link-hover-color:  #5588EE;
 
 // unvisited link
 a:link, a:visited {
-    color: #202C99;
+    color: $link-color;
     text-decoration: none;
     transition: 0.25s;
 }
 
 // mouse over link
 a:active, a:hover {
-    color: #5588EE;
+    color: $link-hover-color;
 }

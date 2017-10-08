@@ -13,6 +13,7 @@
 $logo-size   : 320px;
 $project-size: 224px;
 $icon-size   : 96px;
+$main-bg     : #F2F2EC;
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -25,7 +26,7 @@ $icon-size   : 96px;
 }
 
 body {
-    background: #ECECEC;
+    background: $main-bg;
     color: #252525;
 }
 
@@ -74,16 +75,50 @@ h2 {
 }
 
 nav {
+    background: $main-bg;
+
+    ul {
+        list-style: none;
+    }
+
     .columns {
         text-align: center;
         font-size: 1.75rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
 
         a {
             display: block;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid $main-bg;
+        }
+
+        a:hover {
+            border-bottom: 3px solid $link-hover-color;
         }
     }
+
+    li {
+        margin-bottom: 0;
+    }
+
+    @media screen and ($bp-larger-than-phablet) {
+        position: sticky;
+        top: 0;
+    }
+}
+
+nav.scrolled {
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.3s;
+
+    a {
+        font-size: 1.4rem;
+    }
+}
+
+nav.scrolled:hover {
+    opacity: 1.0;
 }
 
 .project {
