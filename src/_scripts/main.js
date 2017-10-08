@@ -4,6 +4,7 @@
 'use strict';
 
 var $ = require('jquery');
+var $ = require('jquery-easing');
 
 $(function() {
     var navs = ['#about', '#projects', '#contact'];
@@ -22,7 +23,7 @@ $(function() {
     $("nav a").click(function() {
         var linkTarget = $(this).attr('href');
 
-        $('html, body').animate({scrollTop: $(linkTarget).offset().top}, 500);
+        $('html, body').animate({scrollTop: $(linkTarget).offset().top - 50}, 600, 'easeInOutCubic');
     });
 });
 

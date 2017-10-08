@@ -10,10 +10,11 @@
 // Import Modules
 @import '../_modules/link/link';
 
-$logo-size   : 320px;
-$project-size: 224px;
-$icon-size   : 96px;
-$main-bg     : #F2F2EC;
+$logo-size      : 320px;
+$project-size   : 224px;
+$icon-size      : 96px;
+$main-bg        : #F2F2EC;
+$transition-time: 0.25s;
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -23,6 +24,8 @@ $main-bg     : #F2F2EC;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
+    transition: $transition-time;
 }
 
 body {
@@ -110,7 +113,6 @@ nav {
 nav.scrolled {
     width: 100%;
     opacity: 0.8;
-    transition: 0.3s;
 
     a {
         font-size: 1.4rem;
