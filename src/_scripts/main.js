@@ -7,8 +7,6 @@ var $ = require('jquery');
 var $ = require('jquery-easing');
 
 $(function() {
-    var navs = ['#about', '#projects', '#contact'];
-
     // hand-rolled scrollspy handlers
     $(window).scroll(function() {
         if(!isElementInView($('header'))) {
@@ -25,6 +23,18 @@ $(function() {
 
         $('html, body').animate({scrollTop: $(linkTarget).offset().top - 50}, 600, 'easeInOutCubic');
     });
+
+    $(".project").click(function(e) {
+        e.preventDefault();
+        $(".expanded").removeClass("expanded");
+        $(this).parent().next(".details").addClass("expanded");
+        $(this).children("a").addClass("expanded");
+    });
+
+    $(".close").click(function(e) {
+        e.preventDefault();
+        $(".expanded").removeClass("expanded");
+    })
 });
 
 // source: https://stackoverflow.com/a/488073
