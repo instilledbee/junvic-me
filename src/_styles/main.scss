@@ -211,12 +211,16 @@ a.expanded > img {
     border-radius: 10px;
     margin-bottom: 2rem;
 
-    h2 {
+    div > * {
         margin: 2rem;
     }
 
-    p {
-        margin: 2rem;
+    a {
+        color: #BBDDEE;
+    }
+
+    a:hover {
+        color: #FFFFFF;
     }
 
     .close {
@@ -224,15 +228,16 @@ a.expanded > img {
         float: right;
         top: 0.75rem;
         right: 1.75rem;
-        color: #F0F0F0;
         line-height: 3rem;
         font-size: 3rem;
         font-weight: bold;
+        margin: 0;
+        color: #F0F0F0;
     }
 }
 
 .details.expanded {
-    height: 150px;
+    height: 17rem;
 }
 
 .details::after {

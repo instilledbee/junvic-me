@@ -1,6 +1,7 @@
 {% extends '_layouts/base.nunjucks' %}
 
 {% import "_modules/link/link.nunjucks" as link %}
+{% import "_modules/project/project.nunjucks" as project %}
 {% import "_modules/row/row.nunjucks" as row %}
 
 {% block content %}
@@ -31,36 +32,28 @@
     {{row.row("about", "About Me", "My name is Junvic Valdez, and I'm a software developer based in Manila, Philippines.", "My 3 years of professional experience involved working with several Microsoft and .NET technologies. I've been a part of projects that used tech both old and new, from .NET Core, Xamarin, ASP.NET, SignalR and even Compact Framework and Windows Mobile!", "I am also a passionate learner; outside of work I've involved myself in continuous learning and application through personal side projects, such as front-end development (AngularJS, Node, Bootstrap) and game development (Love2D, PhaserJS, SFML)")}}
     {{row.row("projects", "Projects", "Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a not-so-exhaustive list of side projects which I <em>can</em> share:")}}
     <section class="row">
-        <div class="four columns project">
-            <a href="#"><img src="images/psxmmclib.png" alt="PSXMMCLibrary"></a>
-        </div>
-        <div class="four columns project">
-            <a href="#"><img src="images/office-clicker.png" alt="Office Clicker"></a>
-        </div>
-        <div class="four columns project">
-            <a href="#"><img src="images/ad-infinitum.png" alt="Ad Infinitum"></a>
-        </div>
+        {{project.content("PSXMMCLibrary", "A .NET Library for decoding Playstation™ memory card files", "https://github.com/instilledbee/psxmmclibrary", "images/psxmmclib.png")}}
+        {{project.content("Office Clicker", "A (work in progress) idle clicker game made with AngularJS", "https://instilledbee.net/projects/officeclicker", "images/office-clicker.png")}}
+        {{project.content("Ad Infinitum", "A game made for /r/webgames' 2016 online game jam. Made with PhaserJS", "https://instilledbee.net/projects/webgame", "images/ad-infinitum.png")}}
     </section>
     <section class="row details">
         <div class="twelve columns">
             <a href="#" class="close">&#215;</a>
-            <h2>PSXMMCLibrary</h2>
-            <p>Lorem ipsum dolor sit amet</p>
+            <h2 id="projectTitle"></h2>
+            <p id="projectDesc"></p>
+            <a href="#" target="_blank" id="projectLink">Go to project</a>
         </div>
     </section>
     <section class="row">
-        <div class="four columns project">
-            <a href="#"><img src="images/compo.png" alt="Compo"></a>
-        </div>
-        <div class="four columns project">
-            <a href="#"><img src="images/instilledbee-net.png" alt="InstilledBee's Studio"></a>
-        </div>
+        {{project.content("Compo", "A game made for the 2017 LÖVE2D Game Jam", "https://instilledbee.itch.io/compo", "images/compo.png")}}
+        {{project.content("InstilledBee's Studio", "I host my smaller projects in this mini-website/directory", "http://instilledbee.net", "images/instilledbee-net.png")}}
     </section>
     <section class="row details">
         <div class="twelve columns">
             <a href="#" class="close">&#215;</a>
-            <h2>PSXMMCLibrary</h2>
-            <p>Lorem ipsum dolor sit amet</p>
+            <h2 id="projectTitle"></h2>
+            <p id="projectDesc"></p>
+            <a href="#" target="_blank" id="projectLink">Go to project</a>
         </div>
     </section>
     <section class="row" id="contact">

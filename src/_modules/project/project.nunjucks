@@ -1,0 +1,6 @@
+{% macro content(title, desc, link, img) %}
+
+<div class="four columns project" data-title="{{title}}" data-desc="{{desc}}" data-link="{{link}}">
+    <a href="#"><img src="{{img}}" alt="{{title}}"></a>
+</div>
+{% endmacro %}

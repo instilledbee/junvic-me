@@ -26,9 +26,22 @@ $(function() {
 
     $(".project").click(function(e) {
         e.preventDefault();
+
+        var $this = $(this);
+        var $details = $this.parent().next(".details");
+        var title = $this.data("title");
+        var desc = $this.data("desc");
+        var link = $this.data("link");
+
+        console.log(link);
+
+        $details.find("#projectTitle").text(title);
+        $details.find("#projectDesc").text(desc);
+        $details.find("#projectLink").attr("href", link);
+
         $(".expanded").removeClass("expanded");
-        $(this).parent().next(".details").addClass("expanded");
-        $(this).children("a").addClass("expanded");
+        $details.addClass("expanded");
+        $this.children("a").addClass("expanded");
     });
 
     $(".close").click(function(e) {
