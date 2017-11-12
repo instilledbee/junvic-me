@@ -21,7 +21,10 @@ $(function() {
     $("nav a").click(function() {
         var linkTarget = $(this).attr('href');
 
-        $('html, body').animate({scrollTop: $(linkTarget).offset().top - 50}, 600, 'easeInOutCubic');
+        // Does this link go to a separate page?
+        if(linkTarget.charAt(0) == '#') {
+            $('html, body').animate({scrollTop: $(linkTarget).offset().top - 50}, 600, 'easeInOutCubic');
+        }
     });
 
     $(".project").click(function(e) {
