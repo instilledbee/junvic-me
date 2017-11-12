@@ -33,7 +33,7 @@
     {{row.row("projects", "Projects", "Sadly I can't list most of the projects I've worked on, due to NDAs and whatnot. But here's a not-so-exhaustive list of side projects which I <em>can</em> share:")}}
     <section class="row">
         {{project.content("PSXMMCLibrary", "A .NET Library for decoding Playstation™ memory card files", "https://github.com/instilledbee/psxmmclibrary", "images/psxmmclib.png")}}
-        {{project.content("Office Clicker", "A (work in progress) idle clicker game made with AngularJS", "https://instilledbee.net/projects/officeclicker", "images/office-clicker.png")}}
+        {{project.content("Office Clicker", "A (work in progress) idle clicker game made with AngularJS", "https://instilledbee.net/games/officeclicker", "images/office-clicker.png")}}
         {{project.content("Ad Infinitum", "A game made for /r/webgames' 2016 online game jam. Made with PhaserJS", "https://instilledbee.net/projects/webgame", "images/ad-infinitum.png")}}
     </section>
     <section class="row details">
