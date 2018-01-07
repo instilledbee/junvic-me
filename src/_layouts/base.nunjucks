@@ -15,7 +15,7 @@
     <title>{{title}}</title>
     <meta name="description" content="Junvic Valdez's developer portfolio"/>
     <meta property="og:title" content="Junvic's Developer Portfolio"/>
-    <meta property="og:description" content="This portfolio describes what I do and lists things I made."/>
+    <meta property="og:description" content="Junvic is a software developer from Manila, PH. This portfolio describes what he does and lists things he built."/>
     <meta property="og:image" content="https://junvic.me/images/junvic.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{{baseUrl}}styles/main.css"/>

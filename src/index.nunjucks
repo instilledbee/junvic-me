@@ -58,7 +58,7 @@
     </section>
     <section class="row" id="contact">
         <h2>Contact Me</h2>
-        <p>I am currently <strong>open</strong> to new work opportunities! Feel free to send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and discuss.<br/>My resumé is available upon request.</p>
+        <p>I am currently <strong>not looking</strong> for full-time work. I will consider consultancy and/or part-time freelancing, however. Feel free to send me a message at {{link.content({ href: 'mailto:contact@junvic.me', text: 'contact@junvic.me' })}} and discuss.<br/></p>
         <p>If e-mail isn't an option, feel free to connect with me on social media and other websites:</p>
         <ul>
             <li>{{link.content({ href: 'https://linkedin.com/in/junvicvaldez', text: '<img src="images/linkedin.png" alt="LinkedIn">', target: '_blank', id: 'linkedin' })}}</li>
@@ -68,7 +68,7 @@
         </ul>
     </section>
     <footer class="row footer">
-        <p>Copyright &copy;2014-2017 Junvic Valdez<br/>Built with the help of {{link.content({ href: 'https://github.com/larsonjj/generator-yeogurt', text: 'Yeogurt', target: '_blank' })}}, {{link.content({ href: 'https://mozilla.github.io/nunjucks/', text: 'Nunjucks', target: '_blank' })}}, {{link.content({ href: 'http://getskeleton.com', text: 'Skeleton', target: '_blank' })}}, and {{link.content({ href: 'https://code.visualstudio.com', text: 'Visual Studio Code', target: '_blank' })}}</p>
+        <p>Copyright &copy; Junvic Valdez<br/>Built with the help of {{link.content({ href: 'https://github.com/larsonjj/generator-yeogurt', text: 'Yeogurt', target: '_blank' })}}, {{link.content({ href: 'https://mozilla.github.io/nunjucks/', text: 'Nunjucks', target: '_blank' })}}, {{link.content({ href: 'http://getskeleton.com', text: 'Skeleton', target: '_blank' })}}, and {{link.content({ href: 'https://code.visualstudio.com', text: 'Visual Studio Code', target: '_blank' })}}</p>
         <p>{{link.content({ href: 'https://github.com/instilledbee/junvic-me', text: 'View source on Github', target: '_blank' })}}</p>
     </footer>
 </div>
